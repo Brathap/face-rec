@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.example.face"
-    compileSdk = 34
+    compileSdk = 36
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -47,7 +47,7 @@ subprojects {
     afterEvaluate {
         if (plugins.hasPlugin("com.android.library") || plugins.hasPlugin("com.android.application")) {
             extensions.configure<com.android.build.gradle.BaseExtension>("android") {
-                compileSdkVersion(34)
+                compileSdkVersion(36)
             }
         }
     }
